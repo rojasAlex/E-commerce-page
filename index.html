@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <title> E-commerce product page</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+   
+ <header class="header">
+    <div class="container__logo">
+      <span class="icon__menu">
+        <img src="images/icon-menu.svg" alt="icon-menu" id="icon-menu">
+      </span>
+      <span class="icon__logo">
+        <img src="images/logo.svg" alt="icon-logo">
+      </span>
+
+      <nav class="menu">
+        <span class="icon__close">
+          <img src="images/icon-close.svg" alt="icon-close" id="icon-close">
+        </span>
+  
+        <ul class="menu__list">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="container__avatar">
+       <span class="icon__cart">
+        <img src="images/icon-cart.svg" alt="icon-cart" id="icon-cart">
+       </span>
+       <span class="avatar">
+        <img src="images/image-avatar.png" alt="image-avatar">
+       </span>
+    </div>
+    
+    <div class="basket">
+      <div class="basket__container-title">
+        <span class="basket__title">Cart</span>
+      </div>
+
+      <div class="basket__shopping">
+        
+        <span 
+        class="basket__shopping-empty">
+        Your cart is empty.
+        </span>
+      </div>
+    </div>
+    
+    <template id="template">
+      <div class="shopping__detail">
+        <div class="shopping__detail-content">
+         <img src="images/image-product-1-thumbnail.jpg" alt="image-product">
+         <div class="shopping__detail-text">
+           <p>Fall Limited Edition Sneakers</p>
+           <span class="shopping__price">
+             $125.00
+           </span>
+           x
+           <span class="shopping__amount">
+             3
+           </span>
+           <span class="total__price">
+             $375.00
+           </span>
+         </div>
+       </div>
+       <img src="images/icon-delete.svg" alt="icon-delete" id="icon-delete">
+     </div>
+     <button class="btn__checkout">
+       Checkout
+     </button>
+    </template>
+
+ </header>
+
+ <main class="main">
+   
+  <section class="sneakers">
+
+     <div class=" sneakers__main">
+       <div class="sneakers__slider sneakers sneakers__slider-main">
+       
+        <input type="radio" name="sradio" id="sradio-1"class= "sradio">
+          <label for="sradio-1">
+            <img src="images/image-product-1-thumbnail.jpg" alt="">
+          </label>
+          <input type="radio" name="sradio" id="sradio-2"class= "sradio" >
+          <label for="sradio-2">
+            <img src="images/image-product-2-thumbnail.jpg" alt="">
+          </label>
+          <input type="radio" name="sradio" id="sradio-3"class= "sradio">
+          <label for="sradio-3">
+            <img src="images/image-product-3-thumbnail.jpg" alt="">
+          </label>
+          <input type="radio" name="sradio" id="sradio-4"class= "sradio">
+          <label for="sradio-4">
+            <img src="images/image-product-4-thumbnail.jpg" alt="">
+          </label>
+          
+          <div class="slider slider__main">
+            <ul class="slider__content">
+              <li ><img src="images/image-product-1.jpg" alt="image-product" class="sneakers__images"></li>
+              <li ><img src="images/image-product-2.jpg" alt="image-product" class="sneakers__images"></li>
+              <li ><img src="images/image-product-3.jpg" alt="image-product" class="sneakers__images"></li>
+              <li ><img src="images/image-product-4.jpg" alt="image-product" class="sneakers__images"></li>
+            </ul>
+          
+          </div>
+       </div>
+     </div>
+
+     <!-- ======Sneaker-Modal=======-->
+      
+     <div class="sneakers__modal ">
+    
+      <div class="sneakers__slider  sneakers__slider-modal ">
+
+        <input type="radio" name="sradio" id="sradio-5"class= "sradio">
+          <label for="sradio-5">
+            <img src="images/image-product-1-thumbnail.jpg" alt="">
+          </label>
+          <input type="radio" name="sradio" id="sradio-6"class= "sradio" >
+          <label for="sradio-6">
+            <img src="images/image-product-2-thumbnail.jpg" alt="">
+          </label>
+          <input type="radio" name="sradio" id="sradio-7"class= "sradio">
+          <label for="sradio-7">
+            <img src="images/image-product-3-thumbnail.jpg" alt="">
+          </label>
+          <input type="radio" name="sradio" id="sradio-8"class= "sradio">
+          <label for="sradio-8">
+            <img src="images/image-product-4-thumbnail.jpg" alt="">
+          </label>
+       
+        <span class="icon__close-modal">
+          <img src="images/icon-close-modal.svg" alt="" id="icon__close-modal">
+        </span>
+
+         <div class="slider">
+           <ul class="  slider__content slider__content-modal">
+             <li class="sneakers__images-modal"><img src="images/image-product-1.jpg" alt="image-product"></li>
+             <li class="sneakers__images-modal"><img src="images/image-product-2.jpg" alt="image-product"></li>
+             <li class="sneakers__images-modal"><img src="images/image-product-3.jpg" alt="image-product"></li>
+             <li class="sneakers__images-modal"><img src="images/image-product-4.jpg" alt="image-product"></li>
+           </ul>
+           <span class="btn__previous btn__previous-modal">
+
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg" id="btn-previous">
+              <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3"
+               fill="none" fill-rule="evenodd"/></svg>
+
+           </span>
+           <span class="btn__next btn__next-modal">
+
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg" id="btn-next">
+              <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3"  
+              fill = "none"  fill-rule="evenodd"/></svg>
+
+           </span>
+         </div>
+      </div>
+    </div>
+     <!-- ========================== -->
+   
+   </section>
+   
+   <section class="sneakers__information">
+    <h5 class="sneakers__title"> Sneaker Company</h5>
+    <h2 class="sneakers__subtitle">  Fall Limited Edition Sneakers</h2>
+     <p class="sneakers__text">
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+     </p>
+     <div class="container__price">
+       <div class="offer__price">
+        <span class="current__price">$125.00</span>
+        <span class="percent">50%</span>
+       </div>
+       <span class="previous__price">
+        <s>$250.00</s>
+      </span>
+     </div>
+     <div class="container__quantity">
+      <div class="quantity">
+        <button class="btn__minus">
+          <img src="images/icon-minus.svg" alt="icon-minus" id = "icon-minus">
+        </button>
+        <span class="value">0</span>
+       
+        <button class=" btn__plus">
+          <img src="images/icon-plus.svg" alt="icon-plus" id="icon-plus">
+        </button>
+      </div>
+        <button class="add__cart">
+          <img src="images/icon-cart-button.svg" alt="icon-cart">
+          Add to cart</button>
+     </div>
+   </section>
+ 
+ </main>
+
+
+
+     <script src="js/index.js"></script>
+</body>
+</html>
